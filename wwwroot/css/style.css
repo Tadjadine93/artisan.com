@@ -1,0 +1,996 @@
+/* @font-face {
+    font-family: myFirstFont;
+    src: url(/assets/fonts/hurme/HurmeGeometricSans1-Regular.woff2);
+  } */
+/* Postheader */
+.postheader {
+    color: #FFF;
+    background-color: #80959f;
+    min-height: 45px;
+    line-height: 45px;
+    background: url(/images/2018-refonte/visuel_professionnel_du_batiment_1920x450.jpg);
+}
+@media (min-width: 768px) {
+    .d-md-block {
+        display: block!important;
+    }
+}
+/* .d-none {
+    display: none!important;
+} */
+div, p, ul, h1, h2, h3, img {
+    margin: 0;
+    padding: 0;
+}
+/* * {
+    font-family: 'Hurme Geometric Sans 1';
+} */
+@media (min-width: 1010px) {
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        background-color: #FFF;
+        /* color: #8095A0; */
+        min-width: 1020px;
+        overflow-x: hidden;
+    }
+}
+@media (min-width: 1010px) {
+    .container {
+        min-width: 1000px;
+    }
+}
+div, p, ul, h1, h2, h3, img {
+    margin: 0;
+    padding: 0;
+}
+button.linknepassuivre {
+    color: inherit!important;
+    background-color: transparent!important;
+    border: none!important;
+    cursor: pointer;
+    padding: 0!important;
+    -webkit-border-radius: 0;
+}
+.postheader span {
+    color: #ee7800;
+}
+.postheader .btn-orange.btn-sm {
+    padding: 5px;
+    margin-top: 7px;
+}
+.btn-orange.btn-sm {
+    padding: 10px 0;
+}
+.btn-orange, .btn-blue, .btn-outline-orange {
+    background-color: #EF7900!important;
+    color: #FFF!important;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 15px 30px;
+}
+.btn {
+    white-space: normal;
+    font-weight: 600;
+}
+/* Postheader End */
+
+/* Nav */
+#main-navbar {
+    background-color: #FFF;
+    padding: 15px;
+    padding-bottom: 20px;
+    padding-top: 0;
+}
+@media (min-width: 1010px) {
+    nav {
+        padding: 0 20px;
+        box-shadow: none!important;
+        margin: 0!important;
+    }
+}
+#main-navbar>.container {
+    height: 120px;
+}
+@media (min-width: 1010px) {
+    #navbarNav {
+        -webkit-box-align: end!important;
+        -ms-flex-align: end!important;
+        align-items: flex-end!important;
+    }
+}
+#navbarNav .navbar-nav, #navbarNav {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+#navbarNav {
+    height: 100%;
+}
+.navbar-dark .navbar-brand {
+    padding: 0;
+    text-indent: -3000px;
+}
+@media (min-width: 1010px) {
+    .brand-logo {
+        background-image: url(/images/2018-refonte/2018-logo.png);
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 3rem;
+        height: 100%;
+        width: 243.88px;
+        max-height: 100%;
+    }
+}
+@media (min-width: 1010px) {
+    nav ul li, nav a {
+        line-height: inherit;
+        max-height: 64px;
+    }
+}
+a {
+    color: #EF7900;
+}
+@media (min-width: 1010px) {
+    #navbarNav .icon-search {
+        display: none;
+    }
+}
+.icon-search {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxuczp4PSJodHRwOi8vbnMuYWRvYmUuY29tL0V4dGVuc2liaWxpdHkvMS4wLyIgeG1sbnM6aT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZUlsbHVzdHJhdG9yLzEwLjAvIiB4bWxuczpncmFwaD0iaHR0cDovL25zLmFkb2JlLmNvbS9HcmFwaHMvMS4wLyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgc3R5bGU9IiI+PHJlY3QgaWQ9ImJhY2tncm91bmRyZWN0IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4PSIwIiB5PSIwIiBmaWxsPSJub25lIiBzdHJva2U9Im5vbmUiLz48bWV0YWRhdGE+PHNmdyB4bWxucz0iaHR0cDovL25zLmFkb2JlLmNvbS9TYXZlRm9yV2ViLzEuMC8iPjxzbGljZXMvPjxzbGljZVNvdXJjZUJvdW5kcyB3aWR0aD0iMTQ0Ny43IiBoZWlnaHQ9IjE0NDMuNyIgeD0iMS4yIiB5PSItMTQ0Ni4zIiBib3R0b21MZWZ0T3JpZ2luPSJ0cnVlIi8+PC9zZnc+PC9tZXRhZGF0YT48ZyBjbGFzcz0iY3VycmVudExheWVyIiBzdHlsZT0iIj48dGl0bGU+TGF5ZXIgMTwvdGl0bGU+PHBhdGggZD0iTTY0LjIsNzIuMmMxLjIsNCwzLjMsNy44LDYuMywxMC44bDkuOSw5LjljMy40LDMuNCw5LDMuNCwxMi40LDBjMy40LTMuNCwzLjQtOSwwLTEyLjRMODMsNzAuNWMtMy0zLTYuNy01LjItMTAuOC02LjMgIGMxMC44LTE0LjcsOS42LTM1LjUtMy43LTQ4LjdjLTE0LjYtMTQuNi0zOC40LTE0LjYtNTMsMHMtMTQuNiwzOC40LDAsNTNDMjguNyw4MS44LDQ5LjUsODMsNjQuMiw3Mi4yeiBNMjQuNSwyNC41ICBjOS43LTkuNywyNS40LTkuNywzNSwwYzkuNyw5LjcsOS43LDI1LjQsMCwzNWMtOS43LDkuNy0yNS40LDkuNy0zNSwwQzE0LjgsNDkuOCwxNC44LDM0LjEsMjQuNSwyNC41eiBNMjUuNiw0MiAgYzAtOSw3LjMtMTYuNCwxNi40LTE2LjRjMi41LDAsNC41LDIsNC41LDQuNXMtMiw0LjUtNC41LDQuNWMtNC4xLDAtNy40LDMuMy03LjQsNy40YzAsMi41LTIsNC41LTQuNSw0LjVTMjUuNiw0NC41LDI1LjYsNDJ6IiBpZD0ic3ZnXzEiIGNsYXNzPSIiIGZpbGwtb3BhY2l0eT0iMSIgZmlsbD0iI2VmNzkwMCIvPjwvZz48L3N2Zz4=) no-repeat;
+    background-size: 23px;
+    background-position: center bottom;
+}
+@media (min-width: 1010px) {
+    #navsearch {
+        display: inline-block!important;
+    }
+}
+#navsearch {
+    position: relative;
+    width: 100%;
+    color: #465a65;
+}
+@media (min-width: 1010px) {
+    #navsearch input.searchField {
+        width: 400px;
+        min-width: 22vw;
+    }
+}
+#navsearch input {
+    background-color: #fff;
+    border-color: #EF7900;
+}
+.input-rounded.search {
+    padding: 10px 0 10px 55px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxuczp4PSJodHRwOi8vbnMuYWRvYmUuY29tL0V4dGVuc2liaWxpdHkvMS4wLyIgeG1sbnM6aT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZUlsbHVzdHJhdG9yLzEwLjAvIiB4bWxuczpncmFwaD0iaHR0cDovL25zLmFkb2JlLmNvbS9HcmFwaHMvMS4wLyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgc3R5bGU9IiI+PHJlY3QgaWQ9ImJhY2tncm91bmRyZWN0IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4PSIwIiB5PSIwIiBmaWxsPSJub25lIiBzdHJva2U9Im5vbmUiLz48bWV0YWRhdGE+PHNmdyB4bWxucz0iaHR0cDovL25zLmFkb2JlLmNvbS9TYXZlRm9yV2ViLzEuMC8iPjxzbGljZXMvPjxzbGljZVNvdXJjZUJvdW5kcyB3aWR0aD0iMTQ0Ny43IiBoZWlnaHQ9IjE0NDMuNyIgeD0iMS4yIiB5PSItMTQ0Ni4zIiBib3R0b21MZWZ0T3JpZ2luPSJ0cnVlIi8+PC9zZnc+PC9tZXRhZGF0YT48ZyBjbGFzcz0iY3VycmVudExheWVyIiBzdHlsZT0iIj48dGl0bGU+TGF5ZXIgMTwvdGl0bGU+PHBhdGggZD0iTTY0LjIsNzIuMmMxLjIsNCwzLjMsNy44LDYuMywxMC44bDkuOSw5LjljMy40LDMuNCw5LDMuNCwxMi40LDBjMy40LTMuNCwzLjQtOSwwLTEyLjRMODMsNzAuNWMtMy0zLTYuNy01LjItMTAuOC02LjMgIGMxMC44LTE0LjcsOS42LTM1LjUtMy43LTQ4LjdjLTE0LjYtMTQuNi0zOC40LTE0LjYtNTMsMHMtMTQuNiwzOC40LDAsNTNDMjguNyw4MS44LDQ5LjUsODMsNjQuMiw3Mi4yeiBNMjQuNSwyNC41ICBjOS43LTkuNywyNS40LTkuNywzNSwwYzkuNyw5LjcsOS43LDI1LjQsMCwzNWMtOS43LDkuNy0yNS40LDkuNy0zNSwwQzE0LjgsNDkuOCwxNC44LDM0LjEsMjQuNSwyNC41eiBNMjUuNiw0MiAgYzAtOSw3LjMtMTYuNCwxNi40LTE2LjRjMi41LDAsNC41LDIsNC41LDQuNXMtMiw0LjUtNC41LDQuNWMtNC4xLDAtNy40LDMuMy03LjQsNy40YzAsMi41LTIsNC41LTQuNSw0LjVTMjUuNiw0NC41LDI1LjYsNDJ6IiBpZD0ic3ZnXzEiIGNsYXNzPSIiIGZpbGwtb3BhY2l0eT0iMSIgZmlsbD0iI2VmNzkwMCIvPjwvZz48L3N2Zz4=) no-repeat;
+    background-size: 30px;
+    background-position: 15px center;
+}
+@media (min-width: 1010px) {
+    input[type=search] {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+}
+.input-rounded {
+    width: 100%;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #EF7900;
+    padding: 8px 25px;
+    font-weight: 500;
+    border: 1px solid #8095a0;
+    box-shadow: none;
+}
+.form-control {
+    font-size: 1em;
+    padding-left: 18px;
+    border-radius: 50px;
+    color: #8095A0;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #8095a0;
+    text-align: center;
+}
+@media (min-width: 1010px) {
+    .menu_contact_marketplace {
+        margin-left: .5vw;
+    }
+}
+@media (min-width: 1010px) {
+    .menu_contact_marketplace i {
+        margin-right: 5px;
+        font-size: 15px;
+    }
+}
+.menu_contact_marketplace span {
+    font-weight: 500;
+}
+#navbarNav .navbar-nav, #navbarNav {
+    -webkit-box-align: end;
+    align-items: flex-end;
+}
+@media (min-width: 1010px) {
+    #main-navbar #navLoginForm {
+        min-width: 90px;
+    }
+}
+#main-navbar #navLoginForm>img {
+    width: 40px;
+    height: 40px;
+}
+#main-navbar .nav-item img {
+    height: 40px;
+}
+img {
+    border: none;
+}
+.navbar-dark .navbar-nav .nav-link span.textesousicone {
+    font-size: .9em;
+    font-weight: 500;
+}
+#paniermp {
+    position: relative;
+}
+#nbProductCart {
+    position: absolute;
+    top: 5px;
+    right: -3px;
+}
+.badge-light {
+    color: #FFF;
+    background-color: #EF7900;
+}
+.badge {
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+/* Nav End */
+
+/* NavMenu */
+#menu_gamme {
+    background-color: #EF7900;
+    display: block;
+}
+#menu_gamme .nav-link {
+    color: #FFF;
+    font-weight: 600;
+    border-radius: 0;
+    padding: 20px 0;
+    font-size: 16px;
+}
+#menu_gamme .nav .dropdown>.dropdown-menu {
+    margin-top: -2px;
+}
+.dropdown-item {
+    color: #8095a0;
+}
+/* NavMenu End */
+
+
+/* Jumbotro */
+.bandeau.bandeau-1 {
+    background-image: url(/images/2020-refonte/homeaccueil.jpg);
+}
+.bandeau {
+    position: relative;
+    color: #FFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-position: center;
+}
+.bandeau .bloc_texte {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    padding: 40px 5%;
+    transform: translateY(-50%);
+    width: 55%;
+}
+/* * {
+    font-family: 'Hurme Geometric Sans 1';
+} */
+#home_page h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+}
+.bandeau .bloc_texte h2, .bandeau .bloc_texte .titre {
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    margin-top: 0!important;
+    color: #FFF!important;
+}
+h1, .h1 {
+    text-align: left;
+    font-size: 30px;
+    line-height: 45px;
+    color: #8095a0;
+    font-weight: 600;
+    margin: 30px 0 10px 0;
+}
+#home_page .bandeau .bloc_texte .btn {
+    background-color: #EF7900;
+    color: #FFF;
+    padding: 1rem 2rem;
+}
+.bandeau .bloc_texte .btn {
+    border: 1px solid transparent;
+    color: #FFF;
+    border-radius: 50px;
+    font-weight: 600;
+    padding: .375rem 1rem;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.btn {
+    white-space: normal;
+    font-weight: 600;
+}
+.bandeau .bloc_texte .texte {
+    margin: 10px 0;
+    font-weight: 400;
+}
+.bandeau .bloc_texte .texte-lg {
+    font-size: 20px;
+}
+/* Jumbotro End */
+
+/* Fonctionnement */
+div.fonctionnement {
+    padding-top: 20px;
+}
+.fonctionnement {
+    margin-bottom: 40px;
+}
+#home_page h2 {
+    color: #EF7900;
+    margin: 30px 0;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1em;
+}
+
+h2, .h2 {
+    font-size: 26px;
+    line-height: 1.2em;
+    color: #EF7900;
+    font-weight: 600;
+    margin: 1em 0;
+}
+#listeoperation>div {
+    margin-bottom: 40px;
+}
+#listeoperation>div::after {
+    position: absolute;
+    height: 33%;
+    right: 0;
+    width: 1px;
+    top: 33%;
+    background-color: #EF7900;
+    content: "\00a0";
+}
+#listeoperation .operation {
+    border: none;
+    width: 75%;
+    margin: 0 auto;
+}
+#listeoperation .operation img {
+    margin-top: 20px;
+    height: 75px;
+    width: auto;
+    max-width: 80%;
+}
+#home_page .fonctionnement img {
+    height: 100%;
+    width: auto;
+}
+#listeoperation .card-img-top {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+#listeoperation .operation .operationbis {
+    font-weight: 500;
+    color: #8095A0;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 0 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+h3, .h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #8095a0;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#listeoperation .operation .card-body {
+    padding-top: 10px;
+}
+#listeoperation .operation .prix-moyen {
+    margin-bottom: 5px;
+}
+#listeoperation .operation .card-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.1;
+    color: #EF7900;
+    margin-bottom: 0;
+}
+#listeoperation .operation .card-title small {
+    font-size: 70%;
+}
+#listeoperation .operation .btn {
+    padding: 10px 15px;
+    border-radius: 35px;
+}
+.btn-orange, .btn-blue, .btn-outline-orange {
+    background-color: #EF7900!important;
+    color: #FFF!important;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 30px;
+}
+/* Fonctionnement End */
+
+/* Ils nous aiment, et nous aussi  */
+.container_gris {
+    background-color: rgba(192,200,206,.2);
+    padding: 10px 0;
+}
+.avisclients {
+    padding: 0 20px 40px 20px;
+}
+.diapo_avisclients {
+    padding: 5px 0 35px;
+}
+.diapo_avisclients .avis {
+    min-height: 200px;
+    background-color: #DFE3E6;
+    padding: 9px 35px 9px 50px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+.diapo_avisclients .avis>div {
+    padding-right: 15px;
+    max-height: 100%;
+}
+.diapo_avisclients .note {
+    margin: 10px 0;
+}
+.diapo_avisclients .note img, .resumeavis .note img {
+    width: 25px;
+    margin: 0 3px;
+}
+.diapo_avisclients .infos {
+    font-weight: 600;
+    font-size: 16px;
+    color: #8095a0;
+}
+.diapo_avisclients .avis .commentaire {
+    max-height: 66px;
+    overflow: hidden;
+}
+.diapo_avisclients p {
+    color: #8095a0;
+    font-weight: 500;
+}
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    color: #8095A0;
+}
+.diapo_avisclients p.date {
+    font-weight: 400;
+}
+@media screen and (min-width: 1010px) {
+    .carousel-control-prev {
+        left: -40px;
+    }
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 30px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+}
+.carousel-control-prev-icon {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMi4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FscXVlXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwIDEwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6IzgxOTVBMDt9DQo8L3N0eWxlPg0KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI4MS42LDQuOSAxMS43LDUwLjEgODEuNiw5NS4xIDgxLjYsNzMgNDUuNyw1MC4xIDgxLjYsMjcuMiAiLz4NCjwvc3ZnPg0K);
+}
+@media screen and (min-width: 1010px) {
+    .carousel-control-next {
+        right: -40px;
+    }
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+}
+.carousel-control-next-icon {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMi4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FscXVlXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwIDEwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6IzgxOTVBMDt9DQo8L3N0eWxlPg0KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxMS43LDQuOSA4MS42LDUwLjEgMTEuNyw5NS4xIDExLjcsNzMgNDcuNSw1MC4xIDExLjcsMjcuMiAiLz4NCjwvc3ZnPg0K);
+}
+/* Ils nous aiment, et nous aussi End */
+
+/* Vous êtes perdus ? */
+@media (min-width: 768px) {
+    .animated .etape.etape-1 {
+        transition: transform 0.5s ease-in-out,opacity 0.5s ease-in-out;
+    }
+}
+.animated .etape {
+    transform: translateY(50px);
+}
+.animated .etape-1, .animated .etape-2, .animated .etape-3, .animated .etape-4 {
+    opacity: 0;
+    transition: transform 1s ease-in-out,opacity 0.5s ease-in-out;
+}
+.etape .image {
+    height: 100px;
+    margin-bottom: 20px;
+}
+#home_page .fonctionnement img {
+    height: 100%;
+    width: auto;
+}
+.etape img {
+    height: 100%;
+    width: auto!important;
+}
+.etape .titre_etape {
+    color: #EF7900;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.etape i {
+    color: #EF7900;
+    font-weight: 600;
+}
+/* Vous êtes perdus ? End */
+
+/* Notre equipe */
+h1, .h1 {
+    text-align: left;
+    font-size: 30px;
+    line-height: 45px;
+    color: #8095a0;
+    font-weight: 600;
+    margin: 30px 0 10px 0;
+}
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    color: #8095A0;
+}
+b, strong {
+    font-weight: 600;
+}
+/* Notre equipe End */
+
+/* Trouvez la perle rare */
+.container_gris {
+    background-color: rgba(192,200,206,.2);
+    padding: 10px 0;
+}
+#home_page h2 {
+    color: #EF7900;
+    margin: 30px 0;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1em;
+}
+h2, .h2 {
+    font-size: 26px;
+    line-height: 1.2em;
+    color: #EF7900;
+    font-weight: 600;
+    margin: 1em 0;
+}
+.trouver_prestation .prestations .btn {
+    font-size: 14px;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    white-space: nowrap;
+    background-color: rgba(255,255,255,.9);
+    color: #EF7900;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 5px 15px;
+    transform: translate(-50%);
+}
+.trouver_prestation .action {
+    margin: 30px 0;
+}
+/* Trouvez la perle rare End */
+
+/* Qui sont nos artisans ? */
+.bandeau.bandeau-2 {
+    background-image: url(/images/2020-refonte/visuel_qui_sont_nos_artisans_6_1920x450.jpg);
+    margin: 50px 0;
+}
+.bandeau {
+    position: relative;
+    color: #FFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-position: center;
+}
+.bandeau .bloc_texte {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    padding: 40px 5%;
+    transform: translateY(-50%);
+    width: 55%;
+}
+.bandeau .bloc_texte .texte {
+    margin: 10px 0;
+    font-weight: 400;
+}
+.bandeau strong {
+    font-weight: 800;
+}
+b, strong {
+    font-weight: 600;
+}
+/* Qui sont nos artisans ? End */
+
+/* Questions fréquemment posées */
+div.accordion div.card {
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+div.accordion div.card-header {
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom-style: none;
+}
+h5, .h5 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #EF7900;
+}
+.page-link, .btn-link {
+    color: #EF7900;
+}
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    color: #8095A0;
+}
+/* Questions fréquemment posées End*/
+
+/* Villes */
+#home_page .villes {
+    margin-bottom: 60px;
+}
+.villes {
+    padding: 15px 0 50px 0;
+}
+.container_gris {
+    background-color: rgba(192,200,206,.2);
+    padding: 10px 0;
+}
+.villes .chip {
+    border: 1px solid #EF7900;
+    background-color: #EF7900;
+    color: #FFF;
+    font-weight: 600;
+    padding: 25px 10px;
+    display: block;
+    line-height: 0em;
+    margin: 10px auto;
+    border-radius: 50px;
+    max-width: 120px;
+}
+.chip {
+    display: inline-block;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0,0,0,.6);
+    line-height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: #e4e4e4;
+    list-style: none;
+}
+.villes .col-6:nth-child(2n) .chip {
+    border: 1px solid #8095a0;
+    background-color: #8095a0;
+}
+/* Villes End */
+
+/* Pour vous simplifier la vie, on s'engage ! */
+div.engagements {
+    padding-top: 20px;
+}
+@media (min-width: 768px) {
+    .animated .etape.etape-1 {
+        transition: transform 0.5s ease-in-out,opacity 0.5s ease-in-out;
+    }
+}
+.animated .etape {
+    transform: translateY(50px);
+}
+.animated .etape-1, .animated .etape-2, .animated .etape-3, .animated .etape-4 {
+    opacity: 0;
+    transition: transform 1s ease-in-out,opacity 0.5s ease-in-out;
+}
+.etape .image {
+    height: 100px;
+    margin-bottom: 20px;
+}
+.etape img {
+    height: 100%;
+    width: auto!important
+}
+.etape .titre_etape {
+    color: #EF7900;
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.etape i {
+    color: #EF7900;
+    font-weight: 600;
+}
+.etape p {
+    color: #8095a0;
+    font-weight: 500;
+}
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    color: #8095A0;
+}
+/* Pour vous simplifier la vie, on s'engage ! End */
+
+/* Notre histoire depuis 2007 */
+.bandeau.bandeau-3 {
+    background-image: url(/images/2020-refonte/visuel_histoire_ma_1920x450.jpg);
+    height: 550px;
+}
+.bandeau.centre .bloc_texte {
+    width: 50vw;
+}
+.bandeau.bandeau-3 .bloc_texte {
+    width: 50%;
+}
+.bandeau .bloc_texte {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    padding: 40px 5%;
+    transform: translateY(-50%);
+    width: 55%;
+}
+
+/* Notre histoire depuis 2007 End */
+
+/* On_parle_de_nous */
+
+/* On_parle_de_nous End */
+/* Nos Services */
+#home_page .nos_services {
+    margin-top: 60px;
+}
+.nos_services {
+    background: url(/images/2018-refonte/visuel_professionnel_du_batiment_1920x450.jpg);
+    color: #FFF;
+    padding: 30px 0 70px;
+    margin: 50px 0 0 0;
+}
+#home_page h2 {
+    color: #EF7900;
+    margin: 30px 0;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1em;
+}
+h2, .h2 {
+    font-size: 40px;
+    line-height: 1.2em;
+    color: #EF7900;
+    font-weight: 800;
+    margin: 1em 0;
+}
+.nos_services .nombre {
+    font-size: 60px;
+    font-weight: 900;
+}
+.nos_services .nombre+p {
+    margin-top: -16px;
+}
+
+.nos_services p {
+    color: #FFF;
+}
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+.nos_services .titre_orange {
+    color: #EF7900;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px 0;
+}
+.nos_services .btn {
+    margin-top: 1em;
+}
+.btn-orange, .btn-blue, .btn-outline-orange {
+    background-color: #EF7900!important;
+    color: #FFF!important;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 30px;
+}
+
+/* Nos Services End */
+
+/* Poweredby */
+.poweredby {
+    padding: 15px;
+}
+/* Poweredby end */
+
+/* Footer */
+.page-footer {
+    margin-top: 0!important;
+    background-color: #E6E9EB!important;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+div.pdp-text h4 {
+    color: #EF7900;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+h4, .h4 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#emailnewsletter {
+    border-radius: 50px;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: transparent;
+    color: #EF7900;
+    border: 2px solid #EF7900;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.form-control {
+    font-size: 1em;
+    padding-left: 18px;
+    border-radius: 50px;
+    color: #8095A0;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+}
+.espacenewsletter button {
+    border-radius: 50px;
+    padding: 20px 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #EF7900;
+    border: none;
+    font-weight: 800;
+    margin: 10px 0;
+}
+.btn {
+    white-space: normal;
+    font-weight: 600;
+}
+.btn-info {
+    background-color: #0596de;
+    color: #FFF;
+}
+.nobot {
+    display: none;
+}
+.libelleformulaire {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.form-control {
+    font-size: 1em;
+    padding-left: 18px;
+    border-radius: 50px;
+    color: #8095A0;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+}
+footer ul li, .infooffrecomprend ul li, .infos-garanties ul li {
+    list-style-type: none;
+}
+/* li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+} */
+.page-footer a, .page-footer button.linknepassuivre {
+    color: #8095a0;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+a {
+    color: #EF7900;
+}
+.pdp-text hr {
+    padding: 0;
+    border-top: 1px solid #76909A;
+    margin-top: .7rem;
+    margin-bottom: .3rem;
+}
+hr {
+    padding: 15px 0 15px 0;
+    border-top: 3px dotted #b6c5cc;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.page-footer .price {
+    font-size: 20px;
+    font-weight: 700;
+}
+button.linknepassuivre {
+    color: inherit!important;
+    background-color: transparent!important;
+    border: none!important;
+    cursor: pointer;
+    padding: 0!important;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+.price {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+.titre4bis {
+    margin-top: 15px!important;
+}
+.page-footer .reseauxsociaux {
+    margin-top: 10px;
+}
+.footer-copyright {
+    padding-top: 10px;
+    color: #8095a0;
+}
+
+
+/* Footer End */
